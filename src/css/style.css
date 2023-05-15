@@ -29,7 +29,8 @@ body {
     align-items: center;
     border-end-end-radius: 18px;
     border-end-start-radius: 18px;
-}
+}   
+
 
 .cabecalho-title {
     color: var(--light-lavender);
