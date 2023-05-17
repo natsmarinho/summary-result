@@ -40,7 +40,7 @@ body {
 }
 
 .result {
-    background: linear-gradient(var(--violet-blue), var(--persian-blue)) ;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
     border-radius: 100px;
     width: 30%;
     padding: 2em .5em;
@@ -54,7 +54,7 @@ body {
 }
 
 .result p {
-    color: var(--light-lavender)
+    color: var(--light-lavender);
 }
 
 .score-info {
@@ -161,4 +161,50 @@ button {
     padding: 1em;
     border: none;
     border-radius: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .result {
+        border-radius: 120px;
+        padding: 5em .1em;
+    }
+
+    .result-title {
+        font-size: 3em;
+    }
+
+    .result p {
+        font-size: 1.5em;
+    }
+    .cabecalho-title, .score-info-text{
+        font-size: 1.5em;
+    }
+
+    .score-info-title {
+        font-size: 2em;
+        padding-block: 1em;
+    }
+
+    .summary {
+        padding-inline: 8em;
+    }
+
+    .text {
+        font-size: 1.5em;
+        padding-right: 45%;
+    }
+
+    .verbal-text, .visual-text {
+        padding-right: 50%;
+    }
+
+    .summary-list-title{
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1.5em;
+        border-radius: 35px;
+        margin-bottom: 1em;
+    }
 }
