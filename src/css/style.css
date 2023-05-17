@@ -3,6 +3,7 @@
 
 :root{
     --branco: #ffffff;
+    --preto: #00000;
     --light-slate-blue: hsla(252, 100%, 67%);
     --light-royal-blue: hsla(241, 81%, 54%);
     --violet-blue: hsla(256, 72%, 46%, 1);
@@ -11,7 +12,7 @@
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 
-    --Light-red: hsl(0, 100%, 67%);
+    --Light-red: hsla(0, 100%, 67%);
     --Orangey-yellow: hsl(39, 100%, 56%);
     --Green-teal: hsl(166, 100%, 37%);
     --Cobalt-blue: hsl(234, 85%, 45%);
@@ -61,15 +62,103 @@ body {
     padding-bottom: 2.5em;
 }
 
-.score-info-title{
+.score-info-title {
     font-size: 1.7em;
     color: var(--branco);
     font-weight: 700;
     padding-bottom: .5em;
 }
 
-.score-info-text{
+.score-info-text {
     color: var(--light-lavender);
     padding-inline: 3em;
+}
 
+.summary {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-list-title {
+    font-weight: 800;
+    font-size: 1.3em;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+}
+
+.summary-list{
+    padding-inline: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    padding-block: 1em;
+    border-radius: 8px;
+}
+
+.list-item img {
+    padding-inline: 1em;
+}
+
+.list-item span{
+    color: var(--light-lavender);
+}
+
+.list-item p{
+    font-weight: 800;
+}
+
+.text {
+    padding-right: 7em;
+}
+
+.reaction{
+    background: rgba(255, 87, 87, 0.084);
+}
+
+.reaction-text{
+    color: var(--Light-red);
+}
+
+.memory {
+    background: hsla(39, 100%, 56%, 0.119);
+}
+
+.memory-text {
+    color: var(--Orangey-yellow);
+}
+
+.verbal {
+    background: hsla(166, 100%, 37%, 0.084);
+}
+
+.verbal-text {
+    color: var(--Green-teal);
+    padding-right: 8em;
+}
+
+.visual {
+    background: hsla(234, 85%, 45%, 0.105);
+}
+
+.visual-text {
+    color: var(--Cobalt-blue);
+    padding-right: 8em;
+}
+
+button {
+    text-align: center;
+    margin-top: 2em;
+    margin-inline: 3em;
+    background: var(--dark-gray-blue);
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1em;
+    border: none;
+    border-radius: 18px;
 }
