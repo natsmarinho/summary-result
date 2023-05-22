@@ -163,7 +163,7 @@ button {
     border-radius: 18px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .result {
         border-radius: 120px;
         padding: 5em .1em;
@@ -206,5 +206,31 @@ button {
         font-size: 1.5em;
         border-radius: 35px;
         margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .card{
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+    }
+
+    .cabecalho{
+        border-radius: 18px;
+        width: 20em;
+    }
+
+    .cabecalho-title {
+        padding-block: 2.5em
+    }
+
+    .result{
+        padding: 3em 2em;
+    }
+
+    .score-info-title {
+        padding-top: .8em;
+        padding-bottom: 1em;
     }
 }
